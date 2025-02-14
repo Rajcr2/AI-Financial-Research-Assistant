@@ -10,17 +10,19 @@ So, In this project, I have developed a scalable AI based time-series forecastin
 
 The primary goal of this project is to create a AI based time-series forecasting system that can:
    1. Analyze historical data to predict future trends.
-   2. Based on that data to generate Market Sentiment that will provide investor a future insight.
+   2. Provide Investor Long-Term as well as Intraday Forecast.
+   3. Based on that data to generate Market Sentiment that will provide investor a future insight.
 
 ### Prerequisites
 To run this project, you need to install the following libraries:
 ### Required Libraries
 
 - **Python 3.12+**
-- **Yahoo Finance**: This library performs data manipulation and analysis also provides powerful data structures like dataframes.
+- **Yahoo Finance**: This library retrievs real-time and historical market data, stock prices.
 - **Prophet**: A forecasting tool for time-series data, designed to handle trends, seasonality and holidat effects.
 - **Streamlit**: Streamlit is a framework that builds interactive, data-driven web applications directly in python. 
-- **PyTorch**: An Open-source platform for tracking, managing and deploying machine learning workflows.
+- **PyTorch**: This library is primarily used for building and training deep learning models.
+- **Transformers**: This library is given by Hugging Face as a Python package which provides pre-trained models for NLP tasks like text generation, translation, and sentiment analysis.
 
 Other Utility Libraries : **Matplotlib**, **Pandas**, **Talib**.
 
@@ -51,7 +53,7 @@ Other Utility Libraries : **Matplotlib**, **Pandas**, **Talib**.
 4.   Clone this Repository :
 
    ```
-   https://github.com/Rajcr2/Prophet-Forecasting.git
+   [https://github.com/Rajcr2/AI-Financial-Research-Assistant]
    ```
 5.   Now, Install all mentioned required libraries in your environment.
 6.   After, that Run **'main.py'** file from Terminal. To activate the dashboard on your browser.
@@ -69,30 +71,12 @@ Other Utility Libraries : **Matplotlib**, **Pandas**, **Talib**.
 
 Results of MODEL :
 
-https://github.com/user-attachments/assets/e63e357a-aae7-4dc9-8bf5-4e07b7928a27
+https://github.com/user-attachments/assets/2034aeb7-99aa-475e-b697-735b4eb13f61
 
 
+#### Conclusion :
 
+The model has successfully forecasted results and provided market sentiment, helping us decide whether to invest or not. There is room for improvement in the next version, where we will feed recent news data of the given company to the LLM, enabling more accurate forecasting—stay tuned for the update!
 
-
-
-#### Entities Forecast By MODEL :
-#### 1. USD-INR 
-Model has predicted INR has expected to maintain stability against USD by end of 2025, showing minimal fluctuations in its exchange rate indicating a stable currency.
-
-![USD_INR](https://github.com/user-attachments/assets/888429bb-6b05-4d17-9eca-432b33c1441d)
-
-
-#### 2. TCS
-
-As per Model, TCS Stock is projected to experience a 1.58% change by the end of 2025, indicating slight growth or decline which reflecting steady market trend for company.
-
-![TCS_crp](https://github.com/user-attachments/assets/9e1a7139-670d-4993-9581-30bbd3932124)
-
-#### 3. INFOSYS
-
-Infosys stock is expected to undergo an 7.72% change by end of 2025, reflecting a moderate but significant movement in the company's market performance over the period.
-
-![infosys_latest](https://github.com/user-attachments/assets/3554f6e6-238e-414c-9336-104e778b6fa1)
 
 
