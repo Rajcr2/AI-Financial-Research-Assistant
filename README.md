@@ -1,48 +1,51 @@
-# Prophet based Stock Forecasting.
+# AI based Financial Research Assistant.
 
 ## Introduction
 
-In this project, I have developed a scalable time-series forecasting pipeline using Prophet, designed to predict the future stock price of a given company or entity specifically focusing on its performance one year ahead. The pipeline integrates critical features such as seasonality, holiday effects, and trend analysis to provide accurate and actionable forecasts.
+This is the Next Version of my Prophet based Stock Forecasting (https://github.com/Rajcr2/Prophet-Forecasting) Project. 
+So, In this project, I have developed a scalable AI based time-series forecasting pipeline using Prophet and BERT, designed to predict the future stock price and also Market based Sentiment  of a given company or entity specifically focusing on its performance one year ahead. The pipeline integrates critical features such as trend analysis to provide accurate and actionable forecasts and Insights.
 
 ## Objectives
 
-The primary goal of this project is to create a time-series forecasting system that can:
+The primary goal of this project is to create a AI based time-series forecasting system that can:
    1. Analyze historical data to predict future trends.
-   2. Enable easy parameter tuning to improve model performance.
-   3. Provide seamless tracking, logging, and deployment of forecasting models using MLflow.
+   2. Based on that data to generate Market Sentiment that will provide investor a future insight.
 
 ### Prerequisites
 To run this project, you need to install the following libraries:
 ### Required Libraries
 
 - **Python 3.12+**
-- **Pandas**: This library performs data manipulation and analysis also provides powerful data structures like dataframes.
+- **Yahoo Finance**: This library performs data manipulation and analysis also provides powerful data structures like dataframes.
 - **Prophet**: A forecasting tool for time-series data, designed to handle trends, seasonality and holidat effects.
 - **Streamlit**: Streamlit is a framework that builds interactive, data-driven web applications directly in python. 
-- **MLFlow**: An Open-source platform for tracking, managing and deploying machine learning workflows.
+- **PyTorch**: An Open-source platform for tracking, managing and deploying machine learning workflows.
 
-Other Utility Libraries : **Matplotlib**, **io**.
+Other Utility Libraries : **Matplotlib**, **Pandas**, **Talib**.
 
 ### Installation
 
    ```
+   pip install yfinance
    pip install pandas
    pip install streamlit
    pip install prophet
-   pip install mlflow
+   pip install transformers
+   pip install torch
    pip install matplotlib
+   pip install ta
    ```
 
 ### Procedure
 
-1.   Create new directory **'Prophet_Forecasting'**.
+1.   Create new directory **'Financial Assistant'**.
 2.   Inside that directory/folder create new environment.
    
    ```
-   python -m venv mlflowpf
+   python -m venv financeassist
    ```
 
-  Now, activate this **'mlflowpf'** venv.
+  Now, activate this **'financeassist'** venv.
   
 4.   Clone this Repository :
 
@@ -55,10 +58,9 @@ Other Utility Libraries : **Matplotlib**, **io**.
    streamlit run main.py
    ``` 
 7. Now, move to your browser.
-8. Upload the csv file from your local machine or you can use sample csv file given here.
-9. After, uploading set the model parameters such as changepoint or forecast period.
-10. Then convert data into prophet preffered format i.e **'ds'** and **'y'** format.
-11. and then just **'Train Model'** and see the forecast results and also, don't forgot to verify model forecast results after 365 days or your mentioned period 😁. 
+8. Search Company name it will provide Entity symbol and type that symbol i.e TCS.NS. This will display all the required data.
+9. then click on **'Analyze Stock'** which will provide you forecast and Real-time market sentiment.
+10. Check the forecast & results and then decide whether to invest or not 😁. 
 
 
 
