@@ -3,6 +3,7 @@
 ## Introduction
 
 This is the Next Version of my Prophet based Stock Forecasting (https://github.com/Rajcr2/Prophet-Forecasting) Project. 
+
 So, In this project, I have developed a scalable AI based time-series forecasting pipeline using Prophet and BERT, designed to predict the future stock price and also Market based Sentiment  of a given company or entity specifically focusing on its performance one year ahead. The pipeline integrates critical features such as trend analysis to provide accurate and actionable forecasts and Insights.
 
 ## Objectives
